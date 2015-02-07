@@ -6,7 +6,7 @@ use Saxulum\PhpDocGenerator\ParamRow;
 
 class ParamRowTest extends \PHPUnit_Framework_TestCase
 {
-    public function testWithElementName()
+    public function testWithName()
     {
         $paramRow = new ParamRow('string', 'var');
 

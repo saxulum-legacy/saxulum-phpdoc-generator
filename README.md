@@ -19,6 +19,8 @@ Through [Composer](http://getcomposer.org) as [saxulum/saxulum-phpdoc-generator]
 
 ## Usage
 
+Watch the original [phpDocumentor documentation][2]
+
 #### Code
 
 ```{.php}
@@ -38,3 +40,4 @@ $documentor = new Documentor(array(
 ```
 
 [1]: https://packagist.org/packages/saxulum/saxulum-phpdoc-generator
+[2]: http://www.phpdoc.org/docs/latest/index.html

@@ -14,7 +14,7 @@ class VarRowTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('@var string', (string) $varRow);
     }
 
-    public function testWithElementName()
+    public function testWithName()
     {
         $varRow = new VarRow('string', 'var');
 

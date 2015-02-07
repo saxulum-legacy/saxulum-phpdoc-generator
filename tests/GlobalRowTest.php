@@ -6,7 +6,7 @@ use Saxulum\PhpDocGenerator\GlobalRow;
 
 class GlobalRowTest extends \PHPUnit_Framework_TestCase
 {
-    public function testWithElementName()
+    public function testWithName()
     {
         $globalRow = new GlobalRow('string', 'var');
 
