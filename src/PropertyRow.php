@@ -2,10 +2,7 @@
 
 namespace Saxulum\PhpDocGenerator;
 
-/**
- * @link http://www.phpdoc.org/docs/latest/references/phpdoc/tags/param.html
- */
-class ParamRow extends AbstractRow
+class PropertyRow extends AbstractRow
 {
     /**
      * @param string      $type
@@ -24,6 +21,6 @@ class ParamRow extends AbstractRow
      */
     public function getName()
     {
-        return 'param';
+        return 'property';
     }
 }

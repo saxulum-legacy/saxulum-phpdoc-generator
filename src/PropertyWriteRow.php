@@ -3,19 +3,19 @@
 namespace Saxulum\PhpDocGenerator;
 
 /**
- * @link http://www.phpdoc.org/docs/latest/references/phpdoc/tags/var.html
+ * @link http://www.phpdoc.org/docs/latest/references/phpdoc/tags/property-write.html
  */
-class VarRow extends AbstractRow
+class PropertyWriteRow extends AbstractRow
 {
     /**
      * @param string      $type
-     * @param string|null $elementName
+     * @param string      $name
      * @param string|null $description
      */
-    public function __construct($type, $elementName = null, $description = null)
+    public function __construct($type, $name, $description = null)
     {
         $this->addPart($type);
-        $this->addPart($elementName, '$');
+        $this->addPart($name, '$');
         $this->addPart($description);
     }
 
@@ -24,6 +24,6 @@ class VarRow extends AbstractRow
      */
     public function getName()
     {
-        return 'var';
+        return 'property-write';
     }
 }

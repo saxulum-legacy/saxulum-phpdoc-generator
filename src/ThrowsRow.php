@@ -3,9 +3,9 @@
 namespace Saxulum\PhpDocGenerator;
 
 /**
- * @link http://www.phpdoc.org/docs/latest/references/phpdoc/tags/return.html
+ * @link http://www.phpdoc.org/docs/latest/references/phpdoc/tags/throws.html
  */
-class ReturnRow extends AbstractRow
+class ThrowsRow extends AbstractRow
 {
     /**
      * @param string $type
@@ -22,6 +22,6 @@ class ReturnRow extends AbstractRow
      */
     public function getName()
     {
-        return 'return';
+        return 'throws';
     }
 }
