@@ -8,9 +8,9 @@ class CategoryRowTest extends \PHPUnit_Framework_TestCase
 {
     public function testWithDescription()
     {
-        $categoryRow = new CategoryRow('mycategory');
+        $categoryRow = new CategoryRow('this is a description');
 
         $this->assertEquals('category', $categoryRow->getName());
-        $this->assertEquals('@category mycategory', (string) $categoryRow);
+        $this->assertEquals('@category this is a description', (string) $categoryRow);
     }
 }
