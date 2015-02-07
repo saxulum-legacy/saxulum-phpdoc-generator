@@ -7,17 +7,21 @@ abstract class AbstractRow
     /**
      * @var string[]
      */
-    protected $parts;
+    protected $parts = array();
 
     /**
      * @param string|null $part
      * @param string|null $prefix
+     * @param string|null $suffix
      */
-    protected function addPart($part, $prefix = null)
+    protected function addPart($part, $prefix = null, $suffix = null)
     {
         if (null !== $part) {
             if (null !== $prefix) {
                 $part = $prefix.$part;
+            }
+            if (null !== $suffix) {
+                $part = $part.$suffix;
             }
 
             $this->parts[] = $part;
